@@ -6,7 +6,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Ilustra VG</title>
-
+      <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
       <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -50,28 +50,38 @@
                               algunos regalitos super originales♥</p>
                   </div>
             </Section>
-            <section>
-                  <div class="grid-galeria-index">
-                        <div class="img-box-index"><img src="./img/emilia.jpg">
-                              <span>Emilia</span>
+
+            <!-- Carrusel -->
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                        <div class="carousel-item active">
+                              <img src="./img/emilia.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <div class="img-box-index"><img src="./img/emprendedor.jpg">
-                              <span>Emprendedor</span>
+                        <div class="carousel-item">
+                              <img src="./img/biografiaperfecta.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <div class="img-box-index"><img src="./img/mariabecerra.jpg">
-                              <span>Maria</span>
+                        <div class="carousel-item">
+                              <img src="./img/mariabecerra.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <div class="img-box-index"><img src="./img/biografiaperfecta.jpg">
-                              <span>Biografia</span>
+                        <div class="carousel-item">
+                              <img src="./img/emprendedor.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <div class="img-box-index"><img src="./img/nenes2.jpg">
-                              <span>Nenes</span>
-                        </div>
-                        <div class="img-box-index"><img src="./img/padreconniño.jpg">
-                              <span>Guitarra</span>
+                        <div class="carousel-item">
+                              <img src="./img/padreconniño.jpg" class="d-block w-100" alt="...">
                         </div>
                   </div>
-            </section>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
       </main>
 
 
@@ -84,6 +94,7 @@
                   Todos los derechos reservados.
             </Footer>
       </div>
+      <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
