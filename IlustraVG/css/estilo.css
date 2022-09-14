@@ -1,14 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: #cdc3b7; }
+  background-color: #cdc3b7;
+}
 
 .logo {
-  text-align: center; }
+  text-align: center;
+}
 
 .navegacion {
   text-align: right;
@@ -16,41 +19,54 @@ body {
   padding-right: 12px;
   position: fixed;
   top: 0;
-  right: 0; }
-  .navegacion ul li {
-    display: inline-block;
-    padding-left: 15px; }
-    .navegacion ul li a {
-      text-decoration: none;
-      color: white; }
+  right: 0;
+}
+
+.navegacion ul li {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.navegacion ul li a {
+  text-decoration: none;
+  color: white;
+}
 
 h1 {
   margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 20px;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 h2 {
   margin-top: 40px;
   margin-bottom: 20px;
-  text-align: center; }
+  margin-left: 20px;
+  text-align: center;
+}
 
 h3 {
   margin-top: 40px;
   margin-bottom: 20px;
-  margin-left: 20px; }
+  margin-left: 20px;
+}
 
 h4 {
   margin-top: 40px;
   margin-bottom: 20px;
   margin-left: 20px;
-  text-align: center; }
+  text-align: center;
+}
 
 .contenedor {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .grid-galeria {
   display: grid;
@@ -60,63 +76,103 @@ h4 {
   column-gap: 20px;
   gap: 20px;
   opacity: 0, 6;
-  position: relative; }
-  .grid-galeria img {
-    border-radius: 7px;
-    opacity: 0, 4;
-    transition: all 1, 5s;
-    animation-name: animacionGaleriaIlustraciones;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-delay: 1.5s; }
-    .grid-galeria img :hover {
-      transform: scale(1.3);
-      opacity: 1; }
+  position: relative;
+}
+
+.grid-galeria img {
+  border-radius: 7px;
+  opacity: 0, 4;
+  transition: all 1, 5s;
+  animation-name: animacionGaleriaIlustraciones;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+}
+
+.grid-galeria img :hover {
+  transform: scale(1.3);
+  opacity: 1;
+}
 
 .grid-galeria span {
   position: relative;
   background-color: #a3927e;
   color: white;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 @keyframes animacionGaleriaIlustraciones {
   0% {
     border-radius: 2px;
-    opacity: 0, 5; }
+    opacity: 0, 5;
+  }
+
   25% {
     border-radius: 5px;
-    opacity: 0, 6; }
+    opacity: 0, 6;
+  }
+
   50% {
     border-radius: 10px;
-    opacity: 0, 8; }
+    opacity: 0, 8;
+  }
+
   75% {
     border-radius: 15px;
-    opacity: 0, 9; }
+    opacity: 0, 9;
+  }
+
   100% {
     border-radius: 20px;
-    opacity: 1, 1; } }
+    opacity: 1, 1;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .grid-galeria {
-    grid-template-columns: repeat(2, 3fr); }
-    .grid-galeria img {
-      border: 20px; }
-      .grid-galeria img span {
-        position: relative;
-        bottom: 100px;
-        background-color: #a3927e;
-        color: white;
-        border-radius: 5px; } }
+    grid-template-columns: repeat(2, 3fr);
+  }
+
+  .grid-galeria img {
+    border: 20px;
+  }
+
+  .grid-galeria img span {
+    position: relative;
+    bottom: 100px;
+    background-color: #a3927e;
+    color: white;
+    border-radius: 5px;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .grid-galeria {
-    grid-template-columns: repeat(1, 2fr); }
-    .grid-galeria span {
-      position: relative;
-      bottom: 100px;
-      background-color: #a3927e;
-      color: white;
-      border-radius: 5px; } }
+    grid-template-columns: repeat(1, 2fr);
+  }
+
+  .grid-galeria span {
+    position: relative;
+    bottom: 100px;
+    background-color: #a3927e;
+    color: white;
+    border-radius: 5px;
+  }
+}
+
+.cuentas li a {
+  text-decoration: none;
+  color: black;
+}
+
+.color-violeta {
+  background-color: #9d01d1;
+}
+
+.color-celeste {
+  background-color: #00c8e7;
+}
 
 #footer {
-  text-align: right; }
+  text-align: right;
+}
